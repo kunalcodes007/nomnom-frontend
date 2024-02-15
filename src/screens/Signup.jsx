@@ -19,7 +19,7 @@ export default function Signup() {
         password: credentials.password,
       })
     );
-    const response = await fetch("http://localhost:5000/api/create-user", {
+    const response = await fetch("https://nom-nom-backend.vercel.app/api/create-user", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

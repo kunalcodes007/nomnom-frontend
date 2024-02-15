@@ -19,9 +19,9 @@ export default function Cart() {
   const handleCheckOut = async () => {
     let userEmail = localStorage.getItem("userEmail");
     console.log(data, localStorage.getItem("userEmail"), new Date());
-    let response = await fetch("http://localhost:5000/api/auth/orderData", {
+    let response = await fetch("https://nom-nom-backend.vercel.app/api/auth/orderData", {
       credentials: "include",
-      Origin: "http://localhost:3000/login",
+      Origin: "https://nom-nom-backend.vercel.app/login",
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
