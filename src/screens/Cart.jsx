@@ -23,6 +23,7 @@ export default function Cart() {
       credentials: "include",
       Origin: "https://nom-nom-backend.vercel.app/login",
       method: "POST",
+      mode:"cors",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         order_data: data,
