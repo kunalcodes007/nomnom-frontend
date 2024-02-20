@@ -19,6 +19,7 @@ export default function Login() {
     );
     const response = await fetch("https://nom-nom-backend.vercel.app/api/login", {
       method: "POST",
+      withCredentials:"false",
       headers: {
         "Content-Type": "application/json",
       },
