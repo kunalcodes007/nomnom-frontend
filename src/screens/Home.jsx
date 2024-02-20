@@ -14,7 +14,7 @@ export default function Home() {
       headers: {
         "Content-Type": "application/json",
       },
-      withCredentials:"false",
+      withCredentials:"true",
     });
     response = await response.json();
     setItem(response[0]);
