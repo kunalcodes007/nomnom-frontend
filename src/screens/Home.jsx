@@ -14,6 +14,8 @@ export default function Home() {
       headers: {
         "Content-Type": "application/json",
       },
+      withCredentials:"true",
+      mode:"cors",
     });
     response = await response.json();
     setItem(response[0]);
