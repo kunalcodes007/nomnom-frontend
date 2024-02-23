@@ -21,6 +21,7 @@ export default function Signup() {
     );
     const response = await fetch("https://nom-nom-backend.vercel.app/api/create-user", {
       method: "POST",
+      withCredentials:"true",
       headers: {
         "Content-Type": "application/json",
       },
